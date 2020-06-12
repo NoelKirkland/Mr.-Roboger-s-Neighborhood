@@ -8,7 +8,9 @@ $(document).ready(function(){
   $("form#the-neighborhood").submit(function(event){
     // Collect initial user input
     const usersNumber = parseInt($("input#input-number").val());
-
+    if(!usersNumber || usersNumber <= 0 || usersNumber > 24){
+      alert("Please enter a number between 1 and 24");
+    }
     // Create an array of numbers starting from input number to 0
     let numberArray =[];
     for (let index = 0; index <= usersNumber; index ++) {

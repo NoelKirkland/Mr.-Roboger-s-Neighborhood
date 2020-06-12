@@ -11,16 +11,21 @@
   </head>
   <body>
     <div class="container">
-      <h1>Enter a number and see what happens, neighbor!</h1>
-      <form id="the-neighborhood">
-        <div class="form-group">
-          <label for="input-number"></label>
-          <input id="input-number" type="text">
-        </div>
-        <button type="submit" class="btn">Howdy!</button>
-      </form>
+      <div class="jumbotron">
+        <h1>Enter a number and see what happens, neighbor!</h1>
+        <form id="the-neighborhood">
+          <div class="form-group">
+            <label for="input-number" ></label>
+            <input id="input-number" type="text" required>
+          </div>
+          <button type="submit" class="btn-sucess">Howdy!</button>
+        </form>
+      </div>
       <div id="answer">
-        <p>Your <em>make believe</em> number is <span id="output"></span></p>
+        <div class="centered">
+          <p>Your <em>make believe</em> number is <span id="output"></span></p>
+        </div>
+        <img src="img/rogers-thinking.jpg" alt="A photo of Mr. Rogers thinking about your make-believe number">
       </div>
     </div>
   </body>

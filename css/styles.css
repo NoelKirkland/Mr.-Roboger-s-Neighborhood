@@ -1,6 +1,21 @@
 #answer {
   display: none;
+  position: relative;
+  text-align: center;
+  color: white;
 }
 #output {
   font-style: italic;
+}
+img {
+  width: 1100px;
+  height: auto;
+  margin-bottom: 50px;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: large;
 }
