@@ -5,12 +5,10 @@
 $(document).ready(function(){
   $("form#the-neighborhood").submit(function(event){
     const usersNumber = parseInt($("input#input-number").val());
-while (usersNumber > 0) {
-  console.log(usersNumber);
-  usersNumber --;
-}
-console.log("When I get to zero I'm going to come over there, neighbor!")
-    
+    let numberArray =[];
+    for (let index = 0; index <= usersNumber; index += 1) {
+      numberArray.push(usersNumber - [index]);
+    }
     event.preventDefault();
   });
 });
