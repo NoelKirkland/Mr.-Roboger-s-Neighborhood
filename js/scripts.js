@@ -5,6 +5,9 @@ function toString (array){
 
 // User interface
 $(document).ready(function(){
+  $("#reversed").click(function(){
+    $("#output-reversed").fadeToggle();
+  });
   $("form#the-neighborhood").submit(function(event){
     // Collect initial user input
     const usersNumber = parseInt($("input#input-number").val());
@@ -30,9 +33,10 @@ $(document).ready(function(){
     sequentialArray[index] = "Won't you be my neighbor?";
 
     let results = toString(sequentialArray);
-    let resultsReversed = results.reverse();
+    let resultsReversed = sequentialArray.reverse();
     $("#answer").fadeIn();
     $("#output").text(results);
+    $("#output-reversed").text(resultsReversed); 
     event.preventDefault();
   });
 });
