@@ -1,4 +1,4 @@
-Mr. Roboger's Neighborhood specifications
+Mr. Roger's Neighborhood specifications
 
 create a form that and submit button for the user to input a string of numbers
 
@@ -31,4 +31,9 @@ Create some if else branches to prioritize [3]s over [2]s and [2]'s over [1]s
 input: 14
 output: 0,"Beep!","Boop!","Won't you be my neighbor?",4,5,6,7,8,9,"Beep!"0,"Beep!""Beep!","Boop!","Won't you be my neighbor?","Beep!"4,
 
-Return sequence to user
+Return sequence to user displayed in a hidden class
+
+Create a function that reverses the final sequence
+
+Create a toggle feature to allow the user to display the reversed sequence in another hidden class
+
