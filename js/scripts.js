@@ -1,5 +1,7 @@
 // Business logic
-
+function toString (array){
+  return array.join("");
+}
 
 // User interface
 $(document).ready(function(){
@@ -9,6 +11,9 @@ $(document).ready(function(){
     for (let index = 0; index <= usersNumber; index += 1) {
       numberArray.push(usersNumber - [index]);
     }
+    let sequentialArray = numberArray.reverse();
+    let numberString = toString(sequentialArray)
+    let beep = numberString.replace(/1/g, "Beep!");
     event.preventDefault();
   });
 });
