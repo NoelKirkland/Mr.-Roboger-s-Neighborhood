@@ -29,8 +29,8 @@ $(document).ready(function(){
     else if (sequentialArray[index] === 3 || sequentialArray[index] === 13 || sequentialArray[index] === 23)
     sequentialArray[index] = "Won't you be my neighbor?";
 
-    
     let results = toString(sequentialArray);
+    let resultsReversed = results.reverse();
     $("#answer").fadeIn();
     $("#output").text(results);
     event.preventDefault();
