@@ -12,8 +12,17 @@ $(document).ready(function(){
       numberArray.push(usersNumber - [index]);
     }
     let sequentialArray = numberArray.reverse();
-    let numberString = toString(sequentialArray)
-    let beep = numberString.replace(/1/g, "Beep!");
+    for (var index = 0; index < sequentialArray.length; index++)
+    if (sequentialArray[index] === 1)
+        sequentialArray[index] = "Beep!"
+    else if (sequentialArray[index] === 2)
+    sequentialArray[index] = "Boop!";
+    // let beep = sequentialArray.map(function(element){
+    //   return replace(element === 1, "Beep!")
+    // });
+    // let numberString = toString(sequentialArray)
+    // let beep = sequentialArray.replace(/1/g, "Beep!");
+    // let boop = beep.replace(/2/g, "Boop!");
     event.preventDefault();
   });
 });
