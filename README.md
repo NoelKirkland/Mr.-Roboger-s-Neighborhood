@@ -6,7 +6,7 @@
 
 ## Description
 
-_This webpage allows the user to input any number between 1 and 24 and they will receive a their number returned as an acending sequence which has had all numbers with a 1 replaced by the word "Beep!", all numbers with a 2 replaced with the word "Boop!", and all numbers with a 3 replaced with the phrase "Will you be my neighbor?". The user can also select to see their sequence in reverse _
+_This webpage allows the user to input any number between 1 and 24 and they will receive a their number returned as an ascending sequence which has had all numbers with a 1 replaced by the word "Beep!", all numbers with a 2 replaced with the word "Boop!", and all numbers with a 3 replaced with the phrase "Will you be my neighbor?". The user can also select to see their sequence in reverse_
 
 ## Setup/Installation Requirements
 
@@ -32,38 +32,28 @@ _This webpage allows the user to input any number between 1 and 24 and they will
 
 ## Specifications
 
-1. _Create a form that and submit button for the user to input a string of numbers_
+1.  _**Replace all numbers containing "3" with the string "Won't you be my neighbor?"**_
 
-2. _Split scripts file into two commented headers for BL and UI, and create a doc ready for all of my UI logic to go_
+    | Input: |Output: |
+    | :---: | :---: |
+    |  14 | 1,2,Won't you be my neighbor?,4,5,6,7,8,9,10,11,12,Won't you be my neighbor?,14 |
+    |   |  |
 
-3. _Parse user input into an integer and push to a new array from [0] to [users input number]_
+2.  _**Replace all numbers containing "2" with the string "Boop!"**_
 
-4. _Replace all ints [1] with the string "Beep!"
-input: 4
-output: 0,"Beep!",2,3,4_
+    |  Input: | Output: |
+    | :---: | :---: |
+    |  14 | 1,Boop!,Won't you be my neighbor?,4,5,6,7,8,9,10,11,Boop!,Won't you be my neighbor?,14 |
+    |   |  |
 
-    _input: 14
-output: 0,"Beep!",2,3,4,5,6,7,8,9,"Beep!","Beep!","Beep!","Beep!","Beep!"_
+3.  _**Replace all numbers containing "1" with the string "Beep!"**_
 
-5. _Replace all ints [2] with the string "Boop!"
-input: 4
-output: 0,"Beep!","Boop!",3,4_
+    |  Input: | Output: |
+    | :---: | :---: |
+    |  14 | Beep!,Boop!,Won't you be my neighbor?,4,5,6,7,8,9,Beep!,Beep!,Boop!,Won't you be my neighbor?,Beep! |
 
-    _input: 14
-output: 0,"Beep!","Boop!",3,4,5,6,7,8,9,"Beep!","Beep!""Boop!","Won't you be my neighbor?","Beep!"_
+4. _**Create a function that reverses the final sequence**_
 
-6. _Replace all ints [3] with the string "Won't you be my neighbor?"
-input: 4
-output: 0,"Beep!","Boop!","Won't you be my neighbor?",4_
-
-    _input: 14
-output: 0,"Beep!","Boop!","Won't you be my neighbor?",4,5,6,7,8,9,"Beep!","Beep!""Boop!","Won't you be my neighbor?","Beep!"_
-
-7. _Return sequence to user displayed in a hidden class_
-
-8. Create a function that reverses the final sequence
-
-9. Create a toggle feature to allow the user to display the reversed sequence in another hidden class
 
 ## Known Bugs
 
