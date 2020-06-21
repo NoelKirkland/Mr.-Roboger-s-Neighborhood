@@ -37,14 +37,12 @@ _This webpage allows the user to input any number between 1 and 24 and they will
     | Input: |Output: |
     | :---: | :---: |
     |  14 | 1,2,Won't you be my neighbor?,4,5,6,7,8,9,10,11,12,Won't you be my neighbor?,14 |
-    |   |  |
 
 2.  _**Replace all numbers containing "2" with the string "Boop!"**_
 
     |  Input: | Output: |
     | :---: | :---: |
     |  14 | 1,Boop!,Won't you be my neighbor?,4,5,6,7,8,9,10,11,Boop!,Won't you be my neighbor?,14 |
-    |   |  |
 
 3.  _**Replace all numbers containing "1" with the string "Beep!"**_
 
